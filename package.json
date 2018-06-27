@@ -1,0 +1,17 @@
+{
+  "name": "nwd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^2.40.0",
+    "nightwatch": "^0.9.21",
+    "selenium-server-standalone-jar": "^3.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
