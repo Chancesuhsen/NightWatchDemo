@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="home"
+    errors="1" failures="1" hostname="" id="" package="home" skipped="0"
+    tests="1" time="0.8640" timestamp="Thu, 28 Jun 2018 16:58:34 GMT">
+  
+    <testcase name="demo test google" classname="home" time="0.8640" assertions="2">  <failure message="Testing if element &lt;div&gt;img&gt; is visible. Element could not be located.">    at Object.demo test google (C:\Users\Chances\Documents\VSC\NWD\tests\home.js:16:17)</failure>
+
+      <failure message="Failed [equal]: (&#39;Index&#39; == &#39;Automation Test Site&#39;)">    at Object.&lt;anonymous&gt; (C:\Users\Chances\Documents\VSC\NWD\tests\home.js:18:25)</failure>
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+      ERROR: Unable to locate element: &#34;div&gt;img&#34; using: css selector
+    at F.command (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\api\assertions\visible.js:42:21)
+    at F.module.exports.BaseAssertion._scheduleAssertion (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\assertion.js:87:17)
+    at F.module.exports.BaseAssertion._executeCommand (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\assertion.js:82:17)
+    at AssertionInstance.commandFn [as _commandFn] (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\assertion.js:180:21)
+    at AsyncTree.runCommand (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:154:30)
+    at AsyncTree.runChildNode (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:114:8)
+    at AsyncTree.walkDown (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:80:10)
+    at AsyncTree.walkUp (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:97:8)
+    at AsyncTree.walkDown (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:90:12)
+    at AsyncTree.traverse (C:\Users\Chances\Documents\VSC\NWD\node_modules\nightwatch\lib\core\queue.js:73:8)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

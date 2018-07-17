@@ -3,13 +3,14 @@ module.exports = {
         return this.api.launchUrl + ''
     },
     elements: {
-        manageToggle: 'div.menu a.manuals',
-        manageButton: 'div.navbar-collapse.collapse > ul > li:nth-child(2) > a'
+        logo: 'div>img',
+        title: 'div>h2',
     },
     commands: [{
         isLoaded() {
             return this
-                .waitForElementPresent('@page')
-        }
+                .waitForElementPresent('@logo')
+                .waitForElementPresent('@title')
+        },
     }],
 };

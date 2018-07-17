@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="basePageTest"
+    errors="0" failures="0" hostname="" id="" package="basePageTest" skipped="0"
+    tests="2" time="2.643" timestamp="Tue, 17 Jul 2018 16:59:01 GMT">
+  
+    <testcase name="Navigate to the Magneic Automation Home Page verify the base page content" classname="basePageTest" time="1.972" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Navigate Manage Employee Page" classname="basePageTest" time="0.6710" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

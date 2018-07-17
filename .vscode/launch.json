@@ -8,6 +8,29 @@
             "type": "node",
             "request": "launch",
             "console": "integratedTerminal",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}\\node_modules\\mocha-nightwatch\\bin\\_mocha",
+            "args": [
+                //"--env", 
+                "--grep @dev",
+                "localchrome",
+                "--tag",
+                "dev",
+                "--verbose",
+                //"--env", 
+                
+                //"tdd",
+                //"--timeout",
+                //"999999",
+                //"--colors",
+                //"${workspaceFolder}\\tests"
+            ],
+            //"internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
             "name": "Local Chrome Debug",
             "program": "${workspaceFolder}\\node_modules\\nightwatch\\bin\\nightwatch",
             "args": [

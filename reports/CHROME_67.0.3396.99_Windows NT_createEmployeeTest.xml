@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="createEmployeeTest"
+    errors="0" failures="0" hostname="" id="" package="createEmployeeTest" skipped="0"
+    tests="4" time="4.821" timestamp="Mon, 16 Jul 2018 13:46:24 GMT">
+  
+    <testcase name="Open Employee page and navigate to create employee" classname="createEmployeeTest" time="1.363" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verfiy the create Employee Page" classname="createEmployeeTest" time="0.3310" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Fill the Employee Details" classname="createEmployeeTest" time="2.595" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Click Create - Navigate back to Manage Employees" classname="createEmployeeTest" time="0.5320" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
