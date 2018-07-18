@@ -1,10 +1,10 @@
 /**
- * Verify the content of the base page
+ * Verify the Navigation Menu and Base Page attributes
  *
  */
 
 module.exports = {
-    '@tags': ['dev'],
+    //'@tags': ['dev'],
   
     'Navigate to the Magneic Automation Home Page verify the base page content' : function (browser) {
       base = browser.page.basePage()

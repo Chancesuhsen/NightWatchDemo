@@ -2,7 +2,7 @@
  * Create an Employee on the Manage Employee Create New page
  *
  * > Navigate to the Manage Employee Page Verify page 
- *   verifying if the term 'The Night Watch' exists in the search results
+ *
  */
 
 module.exports = {

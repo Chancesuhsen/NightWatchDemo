@@ -6,12 +6,13 @@
  */
 
 module.exports = {
-    //'@tags': ['dev'],
+    '@tags': ['dev'],
   
     'demo test google' : function (client) {
       homepage = new client.page.homePage()
       homepage.navigate()
         .isLoaded()
+        .verifyLogo()
         .assert.containsText('@title','Automation')
         .verify.visible('@logo')
         .getText('@title', function(txt) {
