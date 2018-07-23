@@ -17,5 +17,5 @@ module.exports = {
       'Navigate Manage Employee Page' : function (browser) {
         base.navEmployee()
         base.verifyHeadingAndFooter('Index')
-    },
+      },
   };

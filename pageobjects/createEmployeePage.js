@@ -108,7 +108,6 @@ module.exports = {
             this.waitForElementPresent('@stateOptions')
             this.click('select[id=StateID]>option:nth-of-type('+employeeDetails.stateOption+')')
             this.click('@stateDropdown')
-            //.api.pause(5000)
         }
     }],
 };
