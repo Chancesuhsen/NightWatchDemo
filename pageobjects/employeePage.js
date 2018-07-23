@@ -20,6 +20,6 @@ module.exports = {
             return this.api.page.createEmployeePage()
                 .isLoaded()
 
-        },
+        },              
     }],
 };

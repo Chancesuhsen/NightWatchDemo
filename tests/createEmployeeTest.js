@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-    //'@tags': ['dev'],
+    '@tags': ['dev'],
   
     'Open Employee page and navigate to create employee' : function (browser) {
       employee = browser.page.employeePage()

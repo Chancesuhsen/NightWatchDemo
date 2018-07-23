@@ -23,7 +23,5 @@ module.exports = {
                     this.assert.equal(img.value.height, 77)
                 })
         }
-
-    
     }],
 };
