@@ -36,78 +36,40 @@ module.exports = {
         },
 
         selectState(option) {
-            var elements = document.querySelectorAll("#StateID>Option");
-            Array.prototype.forEach.call(elements, function(item) {
-            var elem = item;
-            if(elem.text==option) {
-                console.log(elem.value)}
-            }); 
-        },
-
-        generateEmployeeDetails() {
-            employeeDetails = {
-            'firstName': 'Chance',//faker.name.firstName(),
-            'lastName': 'Suhsen', //faker.name.lastName(),
-            'address': '1600 Utica Ave. S', //faker.fake("{{address.streetAddress}} {{address.streetSuffix}}"),
-            'city': 'Saint Louis Park', //faker.address.city(),
-            'state': 'California',
-            'stateOption': '4',
-            'department': 'BA',
-            'departmentOption': '7'
-            }
-            
-            return employeeDetails;
-        },
-
-        getEmployeeLabels() {
-            console.log("getlabels")
-            employeeLabels = {
-            'firstName': 'First Name',
-            'lastName': 'Last Name', 
-            'address': 'Address',
-            'state': 'State',
-            'city': 'City',
-            'department': 'Department',
-            }
-            
-            return employeeLabels;
+            return this.setValue('select[id=StateID]', option)
         },
 
         verifyLabels() {
             this.getText('@firstNameLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.firstName)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.firstName)
             })
                 .getText('@lastNameLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.lastName)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.lastName)
             })
                 .getText('@addressLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.address)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.address)
             })
                 .getText('@stateLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.state)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.state)
             })
                 .getText('@cityLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.city)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.city)
             })
                 .getText('@departmentLabel', function(txt){
-                    this.assert.equal(txt.value, employeeLabels.department)
+                    this.assert.equal(txt.value, this.globals.employeeLabels.department)
             })
         },
 
         fillEmployeeDetails() {
-            var employeeDetails = this.generateEmployeeDetails()
-            this.setValue('@firstNameInput',employeeDetails.firstName)
+            this.setValue('@firstNameInput', this.api.globals.employeeDetails.firstName)
             .api.pause(400)
-            this.setValue('@lastNameInput',employeeDetails.lastName)
+            this.setValue('@lastNameInput', this.api.globals.employeeDetails.lastName)
             .api.pause(400)
-            this.setValue('@addressInput', employeeDetails.address)
+            this.setValue('@addressInput', this.api.globals.employeeDetails.address)
             .api.pause(400)
-            this.setValue('@cityInput',employeeDetails.city)
+            this.setValue('@cityInput', this.api.globals.employeeDetails.city)
             .api.pause(400)
-            this.click('@stateDropdown')
-            this.waitForElementPresent('@stateOptions')
-            this.click('select[id=StateID]>option:nth-of-type('+employeeDetails.stateOption+')')
-            this.click('@stateDropdown')
+            this.selectState(this.api.globals.employeeDetails.state)
         }
     }],
 };

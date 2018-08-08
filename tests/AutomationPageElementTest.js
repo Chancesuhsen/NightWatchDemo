@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-    '@tags': ['dev'],
+    //'@tags': ['dev'],
   
     'Navigate to the Magneic Automation Home Page verify the base page content' : function (browser) {
       element = browser.page.automationPageElementPage()

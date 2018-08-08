@@ -5,10 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "chromedriver": "^2.40.0",
+    "faker": "^4.1.0",
     "nightwatch": "^0.9.21",
+    "nightwatch-html-reporter": "^2.0.5",
     "selenium-server-standalone-jar": "^3.12.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha-junit-reporter": "^1.17.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

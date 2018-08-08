@@ -267,3 +267,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+.nyc_output/5608904b96210393eca26073d6f203ea.json
+.nyc_output/5608904b96210393eca26073d6f203ea.json
+.nyc_output/5f9ebc1638cac0946ad314f899892b5c.json
+.nyc_output/a5b99c90c63379866fb08c604cd32c3f.json
+.nyc_output/df3aef9b6c9b688a6bc2b1729a5c03a5.json
+logs/selenium-debug.log
+reports/CHROME_67.0.3396.99_Windows NT_createEmployeeTest.xml
